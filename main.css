@@ -1,0 +1,115 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+/* Change the link color on hover */
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 40px;
+  margin-bottom: 110px;
+}
+
+header {
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.started {
+  font-size: 30px;
+}
+
+hr {
+  height: 3px;
+  background-color: #00ace6;
+}
+
+#html, #nesting_html, #empty_elements,
+#html_anatomy {
+  margin-top: 50px;
+}
+
+.grey-box {
+  background-color: #dcdcdc;
+  border-radius: 5%;
+}
+
+code {
+    background-color: #dcdcdc;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    margin: 20px;
+    display: block;
+    padding: 1em;
+    border-left: 5px solid #00ACC1;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    nav ul {
+        width: 100%;
+        position: relative;
+    }
+
+    nav ul li a {
+      margin-bottom: 15px;
+    }
+
+    #main-doc {
+      margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -10px;
+    width: 90%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+
+  nav ul {
+      width: 100%;
+      position: relative;
+  }
+
+  nav ul li a {
+    margin-bottom: 15px;
+  }
+
+}
